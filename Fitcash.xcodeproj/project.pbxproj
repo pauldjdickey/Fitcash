@@ -7,13 +7,28 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2DDFB79D21CF5E54005F19E6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DDFB79C21CF5E54005F19E6 /* AppDelegate.swift */; };
-		2DDFB79F21CF5E54005F19E6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DDFB79E21CF5E54005F19E6 /* ViewController.swift */; };
-		2DDFB7A221CF5E54005F19E6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2DDFB7A021CF5E54005F19E6 /* Main.storyboard */; };
+		2D27FF0221CF61890003FBF7 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D27FEFB21CF61880003FBF7 /* WelcomeViewController.swift */; };
+		2D27FF0321CF61890003FBF7 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D27FEFC21CF61880003FBF7 /* RegisterViewController.swift */; };
+		2D27FF0421CF61890003FBF7 /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D27FEFD21CF61890003FBF7 /* LogInViewController.swift */; };
+		2D27FF0521CF61890003FBF7 /* WalletViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D27FEFE21CF61890003FBF7 /* WalletViewController.swift */; };
+		2D27FF0621CF61890003FBF7 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D27FEFF21CF61890003FBF7 /* SettingsViewController.swift */; };
+		2D27FF0721CF61890003FBF7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D27FF0021CF61890003FBF7 /* ViewController.swift */; };
+		2D27FF0821CF61890003FBF7 /* RedeemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D27FF0121CF61890003FBF7 /* RedeemViewController.swift */; };
+		2D27FF0E21CF619B0003FBF7 /* DistanceCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D27FF0921CF619A0003FBF7 /* DistanceCalculator.swift */; };
+		2D27FF0F21CF619B0003FBF7 /* LocationsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D27FF0A21CF619A0003FBF7 /* LocationsModel.swift */; };
+		2D27FF1021CF619B0003FBF7 /* Points.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D27FF0B21CF619B0003FBF7 /* Points.swift */; };
+		2D27FF1121CF619B0003FBF7 /* Offer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D27FF0C21CF619B0003FBF7 /* Offer.swift */; };
+		2D27FF1221CF619B0003FBF7 /* Wallet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D27FF0D21CF619B0003FBF7 /* Wallet.swift */; };
+		2D27FF1421CF61A40003FBF7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D27FF1321CF61A40003FBF7 /* AppDelegate.swift */; };
+		2D6591B321CF60A900971DF3 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2D6591B221CF60A900971DF3 /* GoogleService-Info.plist */; };
 		2DDFB7A421CF5E56005F19E6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2DDFB7A321CF5E56005F19E6 /* Assets.xcassets */; };
 		2DDFB7A721CF5E56005F19E6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2DDFB7A521CF5E56005F19E6 /* LaunchScreen.storyboard */; };
 		2DDFB7B221CF5E56005F19E6 /* FitcashTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DDFB7B121CF5E56005F19E6 /* FitcashTests.swift */; };
 		2DDFB7BD21CF5E56005F19E6 /* FitcashUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DDFB7BC21CF5E56005F19E6 /* FitcashUITests.swift */; };
+		2DDFB7D221CF5FA6005F19E6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2DDFB7D121CF5FA6005F19E6 /* Main.storyboard */; };
+		3B09A37BF42219E4862F1F55 /* Pods_FitcashUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 911CE41C57475043FF4D5E31 /* Pods_FitcashUITests.framework */; };
+		B21FB4457B89AA0B45B6CC5B /* Pods_Fitcash.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 037BFF367A01C5FDEF39C11F /* Pods_Fitcash.framework */; };
+		C98C0FEAE25EB678B9E14865 /* Pods_FitcashTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CAEB7670486FECCF6CAE6095 /* Pods_FitcashTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,19 +49,41 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		037BFF367A01C5FDEF39C11F /* Pods_Fitcash.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Fitcash.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		09F626E42D9E33B3FAC7B798 /* Pods-Fitcash.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fitcash.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Fitcash/Pods-Fitcash.debug.xcconfig"; sourceTree = "<group>"; };
+		0EFE6B6A2062A482AAF1E69C /* Pods-FitcashUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FitcashUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FitcashUITests/Pods-FitcashUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		24C6DD863EC1202D443F9A80 /* Pods-FitcashTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FitcashTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FitcashTests/Pods-FitcashTests.debug.xcconfig"; sourceTree = "<group>"; };
+		2D27FEFB21CF61880003FBF7 /* WelcomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		2D27FEFC21CF61880003FBF7 /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		2D27FEFD21CF61890003FBF7 /* LogInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
+		2D27FEFE21CF61890003FBF7 /* WalletViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WalletViewController.swift; sourceTree = "<group>"; };
+		2D27FEFF21CF61890003FBF7 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		2D27FF0021CF61890003FBF7 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = "../../../Documents/App - Fitness Points/FitnessPoints/FitnessPoints/Controllers/ViewController.swift"; sourceTree = "<group>"; };
+		2D27FF0121CF61890003FBF7 /* RedeemViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RedeemViewController.swift; sourceTree = "<group>"; };
+		2D27FF0921CF619A0003FBF7 /* DistanceCalculator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DistanceCalculator.swift; sourceTree = "<group>"; };
+		2D27FF0A21CF619A0003FBF7 /* LocationsModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationsModel.swift; sourceTree = "<group>"; };
+		2D27FF0B21CF619B0003FBF7 /* Points.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Points.swift; sourceTree = "<group>"; };
+		2D27FF0C21CF619B0003FBF7 /* Offer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Offer.swift; sourceTree = "<group>"; };
+		2D27FF0D21CF619B0003FBF7 /* Wallet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Wallet.swift; sourceTree = "<group>"; };
+		2D27FF1321CF61A40003FBF7 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = "../../../Documents/App - Fitness Points/FitnessPoints/FitnessPoints/AppDelegate.swift"; sourceTree = "<group>"; };
+		2D50C74921CF640A00157F35 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2D6591B221CF60A900971DF3 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		2DDFB79921CF5E54005F19E6 /* Fitcash.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Fitcash.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		2DDFB79C21CF5E54005F19E6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		2DDFB79E21CF5E54005F19E6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		2DDFB7A121CF5E54005F19E6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2DDFB7A321CF5E56005F19E6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2DDFB7A621CF5E56005F19E6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		2DDFB7A821CF5E56005F19E6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2DDFB7AD21CF5E56005F19E6 /* FitcashTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FitcashTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2DDFB7B121CF5E56005F19E6 /* FitcashTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FitcashTests.swift; sourceTree = "<group>"; };
 		2DDFB7B321CF5E56005F19E6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2DDFB7B821CF5E56005F19E6 /* FitcashUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FitcashUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2DDFB7BC21CF5E56005F19E6 /* FitcashUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FitcashUITests.swift; sourceTree = "<group>"; };
 		2DDFB7BE21CF5E56005F19E6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2DDFB7CA21CF5E75005F19E6 /* Fitcash.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Fitcash.entitlements; sourceTree = "<group>"; };
+		2DDFB7D121CF5FA6005F19E6 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		65190FF0C3964A9DBBE1398C /* Pods-FitcashUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FitcashUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FitcashUITests/Pods-FitcashUITests.release.xcconfig"; sourceTree = "<group>"; };
+		911CE41C57475043FF4D5E31 /* Pods_FitcashUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FitcashUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B1380A91482CEC6471DD6B80 /* Pods-Fitcash.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fitcash.release.xcconfig"; path = "Pods/Target Support Files/Pods-Fitcash/Pods-Fitcash.release.xcconfig"; sourceTree = "<group>"; };
+		CAEB7670486FECCF6CAE6095 /* Pods_FitcashTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FitcashTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD427F4D0F131333E7CE2228 /* Pods-FitcashTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FitcashTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FitcashTests/Pods-FitcashTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +91,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B21FB4457B89AA0B45B6CC5B /* Pods_Fitcash.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +99,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C98C0FEAE25EB678B9E14865 /* Pods_FitcashTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,12 +107,23 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B09A37BF42219E4862F1F55 /* Pods_FitcashUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1A401CCB612045DA6D8FCEA9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				037BFF367A01C5FDEF39C11F /* Pods_Fitcash.framework */,
+				CAEB7670486FECCF6CAE6095 /* Pods_FitcashTests.framework */,
+				911CE41C57475043FF4D5E31 /* Pods_FitcashUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		2DDFB79021CF5E54005F19E6 = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +131,8 @@
 				2DDFB7B021CF5E56005F19E6 /* FitcashTests */,
 				2DDFB7BB21CF5E56005F19E6 /* FitcashUITests */,
 				2DDFB79A21CF5E54005F19E6 /* Products */,
+				D1A87406E147100BA3129CE6 /* Pods */,
+				1A401CCB612045DA6D8FCEA9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,12 +149,25 @@
 		2DDFB79B21CF5E54005F19E6 /* Fitcash */ = {
 			isa = PBXGroup;
 			children = (
-				2DDFB79C21CF5E54005F19E6 /* AppDelegate.swift */,
-				2DDFB79E21CF5E54005F19E6 /* ViewController.swift */,
-				2DDFB7A021CF5E54005F19E6 /* Main.storyboard */,
+				2DDFB7CA21CF5E75005F19E6 /* Fitcash.entitlements */,
+				2D27FF1321CF61A40003FBF7 /* AppDelegate.swift */,
+				2DDFB7D121CF5FA6005F19E6 /* Main.storyboard */,
 				2DDFB7A321CF5E56005F19E6 /* Assets.xcassets */,
 				2DDFB7A521CF5E56005F19E6 /* LaunchScreen.storyboard */,
-				2DDFB7A821CF5E56005F19E6 /* Info.plist */,
+				2D27FEFD21CF61890003FBF7 /* LogInViewController.swift */,
+				2D27FF0121CF61890003FBF7 /* RedeemViewController.swift */,
+				2D27FEFC21CF61880003FBF7 /* RegisterViewController.swift */,
+				2D27FEFF21CF61890003FBF7 /* SettingsViewController.swift */,
+				2D27FF0021CF61890003FBF7 /* ViewController.swift */,
+				2D27FEFE21CF61890003FBF7 /* WalletViewController.swift */,
+				2D27FEFB21CF61880003FBF7 /* WelcomeViewController.swift */,
+				2D27FF0921CF619A0003FBF7 /* DistanceCalculator.swift */,
+				2D27FF0A21CF619A0003FBF7 /* LocationsModel.swift */,
+				2D27FF0C21CF619B0003FBF7 /* Offer.swift */,
+				2D27FF0B21CF619B0003FBF7 /* Points.swift */,
+				2D27FF0D21CF619B0003FBF7 /* Wallet.swift */,
+				2D50C74921CF640A00157F35 /* Info.plist */,
+				2D6591B221CF60A900971DF3 /* GoogleService-Info.plist */,
 			);
 			path = Fitcash;
 			sourceTree = "<group>";
@@ -125,6 +190,19 @@
 			path = FitcashUITests;
 			sourceTree = "<group>";
 		};
+		D1A87406E147100BA3129CE6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				09F626E42D9E33B3FAC7B798 /* Pods-Fitcash.debug.xcconfig */,
+				B1380A91482CEC6471DD6B80 /* Pods-Fitcash.release.xcconfig */,
+				24C6DD863EC1202D443F9A80 /* Pods-FitcashTests.debug.xcconfig */,
+				DD427F4D0F131333E7CE2228 /* Pods-FitcashTests.release.xcconfig */,
+				0EFE6B6A2062A482AAF1E69C /* Pods-FitcashUITests.debug.xcconfig */,
+				65190FF0C3964A9DBBE1398C /* Pods-FitcashUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +210,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2DDFB7C121CF5E56005F19E6 /* Build configuration list for PBXNativeTarget "Fitcash" */;
 			buildPhases = (
+				48C23106D2FE0F6BE7489B2A /* [CP] Check Pods Manifest.lock */,
 				2DDFB79521CF5E54005F19E6 /* Sources */,
 				2DDFB79621CF5E54005F19E6 /* Frameworks */,
 				2DDFB79721CF5E54005F19E6 /* Resources */,
+				98DE23974D1B044510A704B3 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -149,6 +229,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2DDFB7C421CF5E56005F19E6 /* Build configuration list for PBXNativeTarget "FitcashTests" */;
 			buildPhases = (
+				73D3AA21C793FABA7052C3E0 /* [CP] Check Pods Manifest.lock */,
 				2DDFB7A921CF5E56005F19E6 /* Sources */,
 				2DDFB7AA21CF5E56005F19E6 /* Frameworks */,
 				2DDFB7AB21CF5E56005F19E6 /* Resources */,
@@ -167,6 +248,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2DDFB7C721CF5E56005F19E6 /* Build configuration list for PBXNativeTarget "FitcashUITests" */;
 			buildPhases = (
+				4C912EDD19AA041BE22E429D /* [CP] Check Pods Manifest.lock */,
 				2DDFB7B421CF5E56005F19E6 /* Sources */,
 				2DDFB7B521CF5E56005F19E6 /* Frameworks */,
 				2DDFB7B621CF5E56005F19E6 /* Resources */,
@@ -193,6 +275,14 @@
 				TargetAttributes = {
 					2DDFB79821CF5E54005F19E6 = {
 						CreatedOnToolsVersion = 10.1;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
 					};
 					2DDFB7AC21CF5E56005F19E6 = {
 						CreatedOnToolsVersion = 10.1;
@@ -230,8 +320,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				2DDFB7A721CF5E56005F19E6 /* LaunchScreen.storyboard in Resources */,
+				2D6591B321CF60A900971DF3 /* GoogleService-Info.plist in Resources */,
 				2DDFB7A421CF5E56005F19E6 /* Assets.xcassets in Resources */,
-				2DDFB7A221CF5E54005F19E6 /* Main.storyboard in Resources */,
+				2DDFB7D221CF5FA6005F19E6 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -251,13 +342,123 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		48C23106D2FE0F6BE7489B2A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Fitcash-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4C912EDD19AA041BE22E429D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FitcashUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		73D3AA21C793FABA7052C3E0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FitcashTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		98DE23974D1B044510A704B3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Fitcash/Pods-Fitcash-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Fitcash/Pods-Fitcash-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		2DDFB79521CF5E54005F19E6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2DDFB79F21CF5E54005F19E6 /* ViewController.swift in Sources */,
-				2DDFB79D21CF5E54005F19E6 /* AppDelegate.swift in Sources */,
+				2D27FF1221CF619B0003FBF7 /* Wallet.swift in Sources */,
+				2D27FF1121CF619B0003FBF7 /* Offer.swift in Sources */,
+				2D27FF0F21CF619B0003FBF7 /* LocationsModel.swift in Sources */,
+				2D27FF0221CF61890003FBF7 /* WelcomeViewController.swift in Sources */,
+				2D27FF1421CF61A40003FBF7 /* AppDelegate.swift in Sources */,
+				2D27FF0621CF61890003FBF7 /* SettingsViewController.swift in Sources */,
+				2D27FF0E21CF619B0003FBF7 /* DistanceCalculator.swift in Sources */,
+				2D27FF0821CF61890003FBF7 /* RedeemViewController.swift in Sources */,
+				2D27FF1021CF619B0003FBF7 /* Points.swift in Sources */,
+				2D27FF0421CF61890003FBF7 /* LogInViewController.swift in Sources */,
+				2D27FF0321CF61890003FBF7 /* RegisterViewController.swift in Sources */,
+				2D27FF0721CF61890003FBF7 /* ViewController.swift in Sources */,
+				2D27FF0521CF61890003FBF7 /* WalletViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,14 +494,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		2DDFB7A021CF5E54005F19E6 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				2DDFB7A121CF5E54005F19E6 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		2DDFB7A521CF5E56005F19E6 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -430,8 +623,10 @@
 		};
 		2DDFB7C221CF5E56005F19E6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 09F626E42D9E33B3FAC7B798 /* Pods-Fitcash.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Fitcash/Fitcash.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = S6TAY9VTDK;
 				INFOPLIST_FILE = Fitcash/Info.plist;
@@ -448,8 +643,10 @@
 		};
 		2DDFB7C321CF5E56005F19E6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B1380A91482CEC6471DD6B80 /* Pods-Fitcash.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Fitcash/Fitcash.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = S6TAY9VTDK;
 				INFOPLIST_FILE = Fitcash/Info.plist;
@@ -466,6 +663,7 @@
 		};
 		2DDFB7C521CF5E56005F19E6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 24C6DD863EC1202D443F9A80 /* Pods-FitcashTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -487,6 +685,7 @@
 		};
 		2DDFB7C621CF5E56005F19E6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DD427F4D0F131333E7CE2228 /* Pods-FitcashTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -508,6 +707,7 @@
 		};
 		2DDFB7C821CF5E56005F19E6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0EFE6B6A2062A482AAF1E69C /* Pods-FitcashUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -528,6 +728,7 @@
 		};
 		2DDFB7C921CF5E56005F19E6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 65190FF0C3964A9DBBE1398C /* Pods-FitcashUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
