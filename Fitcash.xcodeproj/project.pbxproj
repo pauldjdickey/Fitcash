@@ -12,7 +12,6 @@
 		2D27FF0421CF61890003FBF7 /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D27FEFD21CF61890003FBF7 /* LogInViewController.swift */; };
 		2D27FF0521CF61890003FBF7 /* WalletViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D27FEFE21CF61890003FBF7 /* WalletViewController.swift */; };
 		2D27FF0621CF61890003FBF7 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D27FEFF21CF61890003FBF7 /* SettingsViewController.swift */; };
-		2D27FF0721CF61890003FBF7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D27FF0021CF61890003FBF7 /* ViewController.swift */; };
 		2D27FF0821CF61890003FBF7 /* RedeemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D27FF0121CF61890003FBF7 /* RedeemViewController.swift */; };
 		2D27FF0E21CF619B0003FBF7 /* DistanceCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D27FF0921CF619A0003FBF7 /* DistanceCalculator.swift */; };
 		2D27FF0F21CF619B0003FBF7 /* LocationsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D27FF0A21CF619A0003FBF7 /* LocationsModel.swift */; };
@@ -21,6 +20,7 @@
 		2D27FF1221CF619B0003FBF7 /* Wallet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D27FF0D21CF619B0003FBF7 /* Wallet.swift */; };
 		2D27FF1421CF61A40003FBF7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D27FF1321CF61A40003FBF7 /* AppDelegate.swift */; };
 		2D6591B321CF60A900971DF3 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2D6591B221CF60A900971DF3 /* GoogleService-Info.plist */; };
+		2D6970E821D002E6007352AA /* WorkoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D6970E721D002E6007352AA /* WorkoutViewController.swift */; };
 		2DDFB7A421CF5E56005F19E6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2DDFB7A321CF5E56005F19E6 /* Assets.xcassets */; };
 		2DDFB7A721CF5E56005F19E6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2DDFB7A521CF5E56005F19E6 /* LaunchScreen.storyboard */; };
 		2DDFB7B221CF5E56005F19E6 /* FitcashTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DDFB7B121CF5E56005F19E6 /* FitcashTests.swift */; };
@@ -58,7 +58,6 @@
 		2D27FEFD21CF61890003FBF7 /* LogInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
 		2D27FEFE21CF61890003FBF7 /* WalletViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WalletViewController.swift; sourceTree = "<group>"; };
 		2D27FEFF21CF61890003FBF7 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
-		2D27FF0021CF61890003FBF7 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = "../../../Documents/App - Fitness Points/FitnessPoints/FitnessPoints/Controllers/ViewController.swift"; sourceTree = "<group>"; };
 		2D27FF0121CF61890003FBF7 /* RedeemViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RedeemViewController.swift; sourceTree = "<group>"; };
 		2D27FF0921CF619A0003FBF7 /* DistanceCalculator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DistanceCalculator.swift; sourceTree = "<group>"; };
 		2D27FF0A21CF619A0003FBF7 /* LocationsModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationsModel.swift; sourceTree = "<group>"; };
@@ -68,6 +67,7 @@
 		2D27FF1321CF61A40003FBF7 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = "../../../Documents/App - Fitness Points/FitnessPoints/FitnessPoints/AppDelegate.swift"; sourceTree = "<group>"; };
 		2D50C74921CF640A00157F35 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2D6591B221CF60A900971DF3 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		2D6970E721D002E6007352AA /* WorkoutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutViewController.swift; sourceTree = "<group>"; };
 		2DDFB79921CF5E54005F19E6 /* Fitcash.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Fitcash.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2DDFB7A321CF5E56005F19E6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2DDFB7A621CF5E56005F19E6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -124,6 +124,41 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		2D68775821CFFFC2005BC081 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				2DDFB7D121CF5FA6005F19E6 /* Main.storyboard */,
+				2DDFB7A521CF5E56005F19E6 /* LaunchScreen.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		2D68775921CFFFCB005BC081 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				2D27FEFD21CF61890003FBF7 /* LogInViewController.swift */,
+				2D27FF0121CF61890003FBF7 /* RedeemViewController.swift */,
+				2D27FEFC21CF61880003FBF7 /* RegisterViewController.swift */,
+				2D27FEFF21CF61890003FBF7 /* SettingsViewController.swift */,
+				2D6970E721D002E6007352AA /* WorkoutViewController.swift */,
+				2D27FEFE21CF61890003FBF7 /* WalletViewController.swift */,
+				2D27FEFB21CF61880003FBF7 /* WelcomeViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		2D68775A21CFFFEE005BC081 /* Data Models and Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				2D27FF0921CF619A0003FBF7 /* DistanceCalculator.swift */,
+				2D27FF0A21CF619A0003FBF7 /* LocationsModel.swift */,
+				2D27FF0C21CF619B0003FBF7 /* Offer.swift */,
+				2D27FF0B21CF619B0003FBF7 /* Points.swift */,
+				2D27FF0D21CF619B0003FBF7 /* Wallet.swift */,
+			);
+			path = "Data Models and Utilities";
+			sourceTree = "<group>";
+		};
 		2DDFB79021CF5E54005F19E6 = {
 			isa = PBXGroup;
 			children = (
@@ -151,21 +186,10 @@
 			children = (
 				2DDFB7CA21CF5E75005F19E6 /* Fitcash.entitlements */,
 				2D27FF1321CF61A40003FBF7 /* AppDelegate.swift */,
-				2DDFB7D121CF5FA6005F19E6 /* Main.storyboard */,
+				2D68775821CFFFC2005BC081 /* Views */,
+				2D68775921CFFFCB005BC081 /* Controllers */,
+				2D68775A21CFFFEE005BC081 /* Data Models and Utilities */,
 				2DDFB7A321CF5E56005F19E6 /* Assets.xcassets */,
-				2DDFB7A521CF5E56005F19E6 /* LaunchScreen.storyboard */,
-				2D27FEFD21CF61890003FBF7 /* LogInViewController.swift */,
-				2D27FF0121CF61890003FBF7 /* RedeemViewController.swift */,
-				2D27FEFC21CF61880003FBF7 /* RegisterViewController.swift */,
-				2D27FEFF21CF61890003FBF7 /* SettingsViewController.swift */,
-				2D27FF0021CF61890003FBF7 /* ViewController.swift */,
-				2D27FEFE21CF61890003FBF7 /* WalletViewController.swift */,
-				2D27FEFB21CF61880003FBF7 /* WelcomeViewController.swift */,
-				2D27FF0921CF619A0003FBF7 /* DistanceCalculator.swift */,
-				2D27FF0A21CF619A0003FBF7 /* LocationsModel.swift */,
-				2D27FF0C21CF619B0003FBF7 /* Offer.swift */,
-				2D27FF0B21CF619B0003FBF7 /* Points.swift */,
-				2D27FF0D21CF619B0003FBF7 /* Wallet.swift */,
 				2D50C74921CF640A00157F35 /* Info.plist */,
 				2D6591B221CF60A900971DF3 /* GoogleService-Info.plist */,
 			);
@@ -447,6 +471,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2D27FF1221CF619B0003FBF7 /* Wallet.swift in Sources */,
+				2D6970E821D002E6007352AA /* WorkoutViewController.swift in Sources */,
 				2D27FF1121CF619B0003FBF7 /* Offer.swift in Sources */,
 				2D27FF0F21CF619B0003FBF7 /* LocationsModel.swift in Sources */,
 				2D27FF0221CF61890003FBF7 /* WelcomeViewController.swift in Sources */,
@@ -457,7 +482,6 @@
 				2D27FF1021CF619B0003FBF7 /* Points.swift in Sources */,
 				2D27FF0421CF61890003FBF7 /* LogInViewController.swift in Sources */,
 				2D27FF0321CF61890003FBF7 /* RegisterViewController.swift in Sources */,
-				2D27FF0721CF61890003FBF7 /* ViewController.swift in Sources */,
 				2D27FF0521CF61890003FBF7 /* WalletViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

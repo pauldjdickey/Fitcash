@@ -8,6 +8,7 @@
 import UIKit
 import Firebase
 import SVProgressHUD
+import CoreLocation
 
 class WalletViewController: UITableViewController {
     
