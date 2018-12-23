@@ -17,9 +17,17 @@
 	<key>CFBundleShortVersionString</key>
 	<string>0.0.1</string>
 	<key>CFBundleVersion</key>
-	<string>1</string>
+	<string>2</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+	<string>Allow location access for geofencing goodness</string>
+	<key>NSLocationAlwaysUsageDescription</key>
+	<string>Allow location access for geofencing goodness</string>
+	<key>NSLocationUsageDescription</key>
+	<string>Allow location access for geofencing goodness</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>Allow location access for geofencing goodness</string>
 	<key>UIBackgroundModes</key>
 	<array>
 		<string>fetch</string>
@@ -45,13 +53,5 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
-	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
-	<string>Allow location access for geofencing goodness</string>
-	<key>NSLocationAlwaysUsageDescription</key>
-	<string>Allow location access for geofencing goodness</string>
-	<key>NSLocationUsageDescription</key>
-	<string>Allow location access for geofencing goodness</string>
-	<key>NSLocationWhenInUseUsageDescription</key>
-	<string>Allow location access for geofencing goodness</string>
 </dict>
 </plist>
