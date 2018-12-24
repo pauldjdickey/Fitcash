@@ -28,12 +28,16 @@ class SettingsViewController: UIViewController {
     @IBAction func logOutPressed(_ sender: Any) {
         do {
             try Auth.auth().signOut()
-            let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
-            let welcomeViewController = storyBoard.instantiateViewController(withIdentifier: "welcomeViewController") as! WelcomeViewController
+            //let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
+           // let welcomeViewController = storyBoard.instantiateViewController(withIdentifier: "welcomeViewController") as! WelcomeViewController
             //let navigationController = UINavigationController(rootViewController: welcomeViewController)
-            present(welcomeViewController, animated: false, completion: nil)
-        }
-        catch {
+            //present(welcomeViewController, animated: false, completion: nil)
+            
+            let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
+            let navigationController = storyBoard.instantiateViewController(withIdentifier: "mainNavigationController") as! UINavigationController
+            present(navigationController, animated: false, completion: nil)
+            
+        } catch {
             print("error: there was a problem logging out")
         }
     }

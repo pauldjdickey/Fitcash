@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="vdS-Z5-1Ed">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="14l-vo-mwb">
     <device id="retina5_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -77,7 +77,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="baT-EO-sj7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1336.2318840579712" y="-1015.7608695652175"/>
+            <point key="canvasLocation" x="2243.4782608695655" y="-1015.7608695652175"/>
         </scene>
         <!--Companies-->
         <scene sceneID="mXO-r2-u9q">
@@ -119,7 +119,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LjG-1r-PB0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2205.7971014492755" y="-1016.5760869565219"/>
+            <point key="canvasLocation" x="3113.04347826087" y="-1016.5760869565219"/>
         </scene>
         <!--Redeem Offer View Controller-->
         <scene sceneID="Jav-dc-BhN">
@@ -163,7 +163,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="thH-bj-tYw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2960.8695652173915" y="-1016.5760869565219"/>
+            <point key="canvasLocation" x="3868.115942028986" y="-1016.5760869565219"/>
         </scene>
         <!--Your Wallet-->
         <scene sceneID="cPv-6z-GF0">
@@ -208,7 +208,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3fD-Lx-mZx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1336.2318840579712" y="-280.43478260869568"/>
+            <point key="canvasLocation" x="2243.4782608695655" y="-280.43478260869568"/>
         </scene>
         <!--Register-->
         <scene sceneID="Qbi-10-llc">
@@ -252,39 +252,28 @@
                                     <action selector="registerPressed:" destination="ijF-cu-V6J" eventType="touchUpInside" id="Vrw-zG-g8t"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="31P-j2-Fvv">
-                                <rect key="frame" x="124.66666666666669" y="446" width="165" height="30"/>
-                                <state key="normal" title="Have an Account? Login"/>
-                                <connections>
-                                    <segue destination="alM-WU-3Xl" kind="popoverPresentation" identifier="goToLogIn" popoverAnchorView="31P-j2-Fvv" id="jGC-37-2Ab">
-                                        <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
-                                    </segue>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="Gn7-Zj-DgM" firstAttribute="centerY" secondItem="WSv-ZT-YAC" secondAttribute="centerY" id="PSf-cl-E2D"/>
                             <constraint firstItem="lyv-hY-Nwm" firstAttribute="top" secondItem="Gn7-Zj-DgM" secondAttribute="bottom" constant="13" id="Pj9-rH-KJH"/>
                             <constraint firstItem="jP9-Ty-Ktg" firstAttribute="centerX" secondItem="WSv-ZT-YAC" secondAttribute="centerX" id="Tob-kE-cBB"/>
-                            <constraint firstItem="31P-j2-Fvv" firstAttribute="centerX" secondItem="WSv-ZT-YAC" secondAttribute="centerX" id="Ych-3y-Jhr"/>
-                            <constraint firstItem="31P-j2-Fvv" firstAttribute="top" secondItem="lyv-hY-Nwm" secondAttribute="bottom" constant="20" id="dAA-FH-qRm"/>
                             <constraint firstItem="Gn7-Zj-DgM" firstAttribute="centerX" secondItem="WSv-ZT-YAC" secondAttribute="centerX" id="odp-ic-E7s"/>
                             <constraint firstItem="lyv-hY-Nwm" firstAttribute="centerX" secondItem="WSv-ZT-YAC" secondAttribute="centerX" id="wNk-2I-Sqv"/>
                             <constraint firstItem="Gn7-Zj-DgM" firstAttribute="top" secondItem="jP9-Ty-Ktg" secondAttribute="bottom" constant="3" id="xNe-J8-0ay"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="vff-he-x29"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Register" id="bA6-s8-RfE"/>
+                    <navigationItem key="navigationItem" title="Register" id="XGe-d6-Sg3"/>
                     <connections>
                         <outlet property="registerEmailField" destination="jP9-Ty-Ktg" id="klp-xa-xUa"/>
                         <outlet property="registerPasswordField" destination="Gn7-Zj-DgM" id="WLX-YP-HJe"/>
-                        <segue destination="bh1-Nq-JdA" kind="show" identifier="goToApp" id="bgm-Ho-cSp"/>
+                        <segue destination="bh1-Nq-JdA" kind="showDetail" identifier="goToApp" id="bgm-Ho-cSp"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gpI-0E-l6m" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2520" y="-1215"/>
+            <point key="canvasLocation" x="-1613.0434782608697" y="-1215.4891304347827"/>
         </scene>
         <!--Log In-->
         <scene sceneID="c76-3s-CEn">
@@ -326,23 +315,12 @@
                                     <action selector="logInPressed:" destination="alM-WU-3Xl" eventType="touchUpInside" id="19X-sJ-EFi"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QAe-83-xVV">
-                                <rect key="frame" x="94.666666666666686" y="441" width="225" height="30"/>
-                                <state key="normal" title="Don't Have an Account? Register"/>
-                                <connections>
-                                    <segue destination="ijF-cu-V6J" kind="popoverPresentation" identifier="goToRegister" popoverAnchorView="QAe-83-xVV" id="BNb-ar-SSS">
-                                        <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
-                                    </segue>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="QAe-83-xVV" firstAttribute="top" secondItem="Kov-vI-35V" secondAttribute="bottom" constant="20" id="JAJ-Vu-zjZ"/>
                             <constraint firstItem="E7n-dA-BSN" firstAttribute="centerX" secondItem="xzI-9z-nYr" secondAttribute="centerX" id="JLa-au-MGa"/>
                             <constraint firstItem="Kov-vI-35V" firstAttribute="top" secondItem="HAO-aa-y3b" secondAttribute="bottom" constant="8" id="QBn-5Z-7e0"/>
                             <constraint firstItem="HAO-aa-y3b" firstAttribute="centerY" secondItem="xzI-9z-nYr" secondAttribute="centerY" id="RRO-hw-rUw"/>
-                            <constraint firstItem="QAe-83-xVV" firstAttribute="centerX" secondItem="xzI-9z-nYr" secondAttribute="centerX" id="ZSy-NZ-cfI"/>
                             <constraint firstItem="HAO-aa-y3b" firstAttribute="top" secondItem="E7n-dA-BSN" secondAttribute="bottom" constant="8" id="eYG-x6-k71"/>
                             <constraint firstItem="HAO-aa-y3b" firstAttribute="centerX" secondItem="xzI-9z-nYr" secondAttribute="centerX" id="f9v-4r-cjl"/>
                             <constraint firstItem="Kov-vI-35V" firstAttribute="centerX" secondItem="xzI-9z-nYr" secondAttribute="centerX" id="lcW-SG-5EP"/>
@@ -353,12 +331,12 @@
                     <connections>
                         <outlet property="emailTextField" destination="E7n-dA-BSN" id="5m1-7o-JL1"/>
                         <outlet property="passwordTextField" destination="HAO-aa-y3b" id="2pv-e9-gN0"/>
-                        <segue destination="bh1-Nq-JdA" kind="show" identifier="goToApp" id="dbH-3N-pE3"/>
+                        <segue destination="bh1-Nq-JdA" kind="showDetail" identifier="goToApp" id="dbH-3N-pE3"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fI5-ag-XRd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2520" y="-167"/>
+            <point key="canvasLocation" x="-1613.0434782608697" y="-167.11956521739131"/>
         </scene>
         <!--Fitcash-->
         <scene sceneID="LBy-rT-K3n">
@@ -372,9 +350,7 @@
                                 <rect key="frame" x="186" y="353" width="42" height="30"/>
                                 <state key="normal" title="Log In"/>
                                 <connections>
-                                    <segue destination="alM-WU-3Xl" kind="popoverPresentation" identifier="goToLogin" popoverAnchorView="HRN-HI-IwW" id="Z6B-6h-UNF">
-                                        <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
-                                    </segue>
+                                    <segue destination="alM-WU-3Xl" kind="show" identifier="goToLogin" id="Z6B-6h-UNF"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gf6-fG-TVH">
@@ -383,9 +359,7 @@
                                 <inset key="contentEdgeInsets" minX="15" minY="2" maxX="15" maxY="2"/>
                                 <state key="normal" title="Register"/>
                                 <connections>
-                                    <segue destination="ijF-cu-V6J" kind="popoverPresentation" identifier="goToRegistration" popoverAnchorView="gf6-fG-TVH" id="hUR-A0-W2G">
-                                        <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
-                                    </segue>
+                                    <segue destination="ijF-cu-V6J" kind="show" identifier="goToRegistration" id="hUR-A0-W2G"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -405,7 +379,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="r4j-dQ-eqk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-4199" y="-690"/>
+            <point key="canvasLocation" x="-3292.753623188406" y="-690.48913043478262"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="Z00-8H-qOR">
@@ -426,7 +400,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RhP-8e-k0y" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-739" y="-690"/>
+            <point key="canvasLocation" x="168.11594202898553" y="-690.48913043478262"/>
         </scene>
         <!--Workout-->
         <scene sceneID="tne-QT-ifu">
@@ -560,7 +534,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iOW-kb-opN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="428.98550724637687" y="-1015.7608695652175"/>
+            <point key="canvasLocation" x="1336.2318840579712" y="-1015.7608695652175"/>
         </scene>
         <!--Workout-->
         <scene sceneID="Nlo-y0-NsA">
@@ -598,7 +572,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vWO-k4-bIX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="428.98550724637687" y="-280.43478260869568"/>
+            <point key="canvasLocation" x="1336.2318840579712" y="-280.43478260869568"/>
         </scene>
         <!--Settings-->
         <scene sceneID="ljP-OP-o6r">
@@ -619,6 +593,27 @@
             </objects>
             <point key="canvasLocation" x="428.98550724637687" y="530.70652173913049"/>
         </scene>
+        <!--Fitcash-->
+        <scene sceneID="5LE-nk-1MS">
+            <objects>
+                <navigationController storyboardIdentifier="mainNavigationController" title="Fitcash" automaticallyAdjustsScrollViewInsets="NO" id="14l-vo-mwb" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="XQQ-Gj-fZP">
+                        <rect key="frame" x="0.0" y="20" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Ow2-WH-CdN">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </toolbar>
+                    <connections>
+                        <segue destination="vdS-Z5-1Ed" kind="relationship" relationship="rootViewController" id="EBl-mq-lWK"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="80M-xr-fjy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-4200" y="-690.48913043478262"/>
+        </scene>
     </scenes>
     <resources>
         <image name="Redeem_Icon" width="16.559999465942383" height="16.559999465942383"/>
@@ -628,7 +623,5 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="bgm-Ho-cSp"/>
-        <segue reference="jGC-37-2Ab"/>
-        <segue reference="BNb-ar-SSS"/>
     </inferredMetricsTieBreakers>
 </document>
