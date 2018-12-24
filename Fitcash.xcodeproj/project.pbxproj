@@ -19,7 +19,7 @@
 		2D27FF1121CF619B0003FBF7 /* Offer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D27FF0C21CF619B0003FBF7 /* Offer.swift */; };
 		2D27FF1221CF619B0003FBF7 /* Wallet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D27FF0D21CF619B0003FBF7 /* Wallet.swift */; };
 		2D27FF1421CF61A40003FBF7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D27FF1321CF61A40003FBF7 /* AppDelegate.swift */; };
-		2D6591B321CF60A900971DF3 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2D6591B221CF60A900971DF3 /* GoogleService-Info.plist */; };
+		2D2FE82021D081590051977B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2D2FE81F21D081580051977B /* GoogleService-Info.plist */; };
 		2D6970E821D002E6007352AA /* WorkoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D6970E721D002E6007352AA /* WorkoutViewController.swift */; };
 		2D6970EA21D05A39007352AA /* OfferCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D6970E921D05A39007352AA /* OfferCategory.swift */; };
 		2D6970EC21D05D29007352AA /* RedeemCompanyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D6970EB21D05D29007352AA /* RedeemCompanyViewController.swift */; };
@@ -69,8 +69,8 @@
 		2D27FF0C21CF619B0003FBF7 /* Offer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Offer.swift; sourceTree = "<group>"; };
 		2D27FF0D21CF619B0003FBF7 /* Wallet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Wallet.swift; sourceTree = "<group>"; };
 		2D27FF1321CF61A40003FBF7 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = "../../../Documents/App - Fitness Points/FitnessPoints/FitnessPoints/AppDelegate.swift"; sourceTree = "<group>"; };
+		2D2FE81F21D081580051977B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		2D50C74921CF640A00157F35 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2D6591B221CF60A900971DF3 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		2D6970E721D002E6007352AA /* WorkoutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutViewController.swift; sourceTree = "<group>"; };
 		2D6970E921D05A39007352AA /* OfferCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfferCategory.swift; sourceTree = "<group>"; };
 		2D6970EB21D05D29007352AA /* RedeemCompanyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedeemCompanyViewController.swift; sourceTree = "<group>"; };
@@ -227,7 +227,7 @@
 				2D68775A21CFFFEE005BC081 /* Data Models and Utilities */,
 				2DDFB7A321CF5E56005F19E6 /* Assets.xcassets */,
 				2D50C74921CF640A00157F35 /* Info.plist */,
-				2D6591B221CF60A900971DF3 /* GoogleService-Info.plist */,
+				2D2FE81F21D081580051977B /* GoogleService-Info.plist */,
 			);
 			path = Fitcash;
 			sourceTree = "<group>";
@@ -380,7 +380,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2DDFB7A721CF5E56005F19E6 /* LaunchScreen.storyboard in Resources */,
-				2D6591B321CF60A900971DF3 /* GoogleService-Info.plist in Resources */,
+				2D2FE82021D081590051977B /* GoogleService-Info.plist in Resources */,
 				2DDFB7A421CF5E56005F19E6 /* Assets.xcassets in Resources */,
 				2DDFB7D221CF5FA6005F19E6 /* Main.storyboard in Resources */,
 			);

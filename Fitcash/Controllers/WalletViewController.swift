@@ -16,6 +16,7 @@ class WalletViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        navigationController?.navigationBar.topItem?.hidesBackButton = true
         fetchOffers()
     }
     //
