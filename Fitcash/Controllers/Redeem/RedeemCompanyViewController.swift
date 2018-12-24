@@ -26,7 +26,7 @@ class RedeemCompanyViewController: UITableViewController {
     override func viewWillAppear(_ animated: Bool) {
         //navigationController?.setNavigationBarHidden(true, animated: true)
         navigationController?.navigationBar.topItem?.hidesBackButton = false
-        tabBarController?.navigationItem.title = "Categories"
+        navigationItem.title = "\(nameOfCategory)"
         //fetchOffers()
     }
     //

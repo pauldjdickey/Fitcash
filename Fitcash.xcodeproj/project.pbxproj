@@ -24,6 +24,7 @@
 		2D6970EA21D05A39007352AA /* OfferCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D6970E921D05A39007352AA /* OfferCategory.swift */; };
 		2D6970EC21D05D29007352AA /* RedeemCompanyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D6970EB21D05D29007352AA /* RedeemCompanyViewController.swift */; };
 		2D6970EE21D05D3C007352AA /* OfferCompany.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D6970ED21D05D3C007352AA /* OfferCompany.swift */; };
+		2D6970F321D06A28007352AA /* RedeemOfferViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D6970F221D06A28007352AA /* RedeemOfferViewController.swift */; };
 		2DDFB7A421CF5E56005F19E6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2DDFB7A321CF5E56005F19E6 /* Assets.xcassets */; };
 		2DDFB7A721CF5E56005F19E6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2DDFB7A521CF5E56005F19E6 /* LaunchScreen.storyboard */; };
 		2DDFB7B221CF5E56005F19E6 /* FitcashTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DDFB7B121CF5E56005F19E6 /* FitcashTests.swift */; };
@@ -74,6 +75,7 @@
 		2D6970E921D05A39007352AA /* OfferCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfferCategory.swift; sourceTree = "<group>"; };
 		2D6970EB21D05D29007352AA /* RedeemCompanyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedeemCompanyViewController.swift; sourceTree = "<group>"; };
 		2D6970ED21D05D3C007352AA /* OfferCompany.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfferCompany.swift; sourceTree = "<group>"; };
+		2D6970F221D06A28007352AA /* RedeemOfferViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedeemOfferViewController.swift; sourceTree = "<group>"; };
 		2DDFB79921CF5E54005F19E6 /* Fitcash.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Fitcash.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2DDFB7A321CF5E56005F19E6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2DDFB7A621CF5E56005F19E6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -188,6 +190,7 @@
 			children = (
 				2D27FF0121CF61890003FBF7 /* RedeemCategoryViewController.swift */,
 				2D6970EB21D05D29007352AA /* RedeemCompanyViewController.swift */,
+				2D6970F221D06A28007352AA /* RedeemOfferViewController.swift */,
 			);
 			path = Redeem;
 			sourceTree = "<group>";
@@ -517,6 +520,7 @@
 				2D27FF0821CF61890003FBF7 /* RedeemCategoryViewController.swift in Sources */,
 				2D27FF1021CF619B0003FBF7 /* Points.swift in Sources */,
 				2D27FF0421CF61890003FBF7 /* LogInViewController.swift in Sources */,
+				2D6970F321D06A28007352AA /* RedeemOfferViewController.swift in Sources */,
 				2D27FF0321CF61890003FBF7 /* RegisterViewController.swift in Sources */,
 				2D27FF0521CF61890003FBF7 /* WalletViewController.swift in Sources */,
 			);

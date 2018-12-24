@@ -81,7 +81,7 @@
             </objects>
             <point key="canvasLocation" x="429" y="-1015"/>
         </scene>
-        <!--Redeem Company View Controller-->
+        <!--Companies-->
         <scene sceneID="mXO-r2-u9q">
             <objects>
                 <tableViewController id="woS-oR-8uq" customClass="RedeemCompanyViewController" customModule="Fitcash" customModuleProvider="target" sceneMemberID="viewController">
@@ -113,6 +113,7 @@
                             <outlet property="delegate" destination="woS-oR-8uq" id="c9o-LT-J1I"/>
                         </connections>
                     </tableView>
+                    <navigationItem key="navigationItem" title="Companies" id="i5B-R4-kq2"/>
                     <connections>
                         <segue destination="3yM-CK-cCv" kind="show" identifier="goToRedeemOffer" id="AVQ-zx-f34"/>
                     </connections>
