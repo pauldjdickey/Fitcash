@@ -17,10 +17,11 @@ class WelcomeViewController: UIViewController {
         
         //If there is a logged in user, by pass this screen and go straight to ChatViewController
         navigationController?.setNavigationBarHidden(false, animated: false)
-        if Auth.auth().currentUser != nil {
-            performSegue(withIdentifier: "goToApp", sender: self)
-        }
-        
+        //let workoutViewController = storyboard?.instantiateViewController(withIdentifier: "workoutViewController") as! WorkoutViewController
+
+//        if Auth.auth().currentUser != nil {
+//            present(workoutViewController, animated: true, completion: nil)
+//        }
     }
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(true)

@@ -28,7 +28,10 @@ class SettingsViewController: UIViewController {
     @IBAction func logOutPressed(_ sender: Any) {
         do {
             try Auth.auth().signOut()
-            navigationController?.popToRootViewController(animated: false)
+            let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
+            let welcomeViewController = storyBoard.instantiateViewController(withIdentifier: "welcomeViewController") as! WelcomeViewController
+            //let navigationController = UINavigationController(rootViewController: welcomeViewController)
+            present(welcomeViewController, animated: false, completion: nil)
         }
         catch {
             print("error: there was a problem logging out")
