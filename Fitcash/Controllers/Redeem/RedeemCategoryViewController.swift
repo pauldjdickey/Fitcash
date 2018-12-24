@@ -14,6 +14,8 @@ class RedeemCategoryViewController: UITableViewController {
     
     var offercategories = [OfferCategory]()
     let pointsDB = Database.database().reference().child("Users")
+    var indexPathRow = 0
+    var nameOfCategorySelected = ""
     
     
     override func viewDidLoad() {
@@ -72,7 +74,15 @@ class RedeemCategoryViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         performSegue(withIdentifier: "goToRedeemCompany", sender: self)
         tableView.deselectRow(at: indexPath, animated: true)
-
+    }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "goToRedeemCompany" {
+            if let indexPath = tableView.indexPathForSelectedRow {
+                let destinationController = segue.destination as! RedeemCompanyViewController
+                let offer = offercategories[indexPath.row]
+                destinationController.nameOfCategory = offer.offerCategoryName!
+            }
+        }
     }
     
     

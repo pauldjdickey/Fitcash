@@ -11,14 +11,16 @@ import Firebase
 
 class RedeemCompanyViewController: UITableViewController {
 
-    var offercategories = [OfferCategory]()
+    var offercategories = [OfferCompany]()
     let pointsDB = Database.database().reference().child("Users")
+    var nameOfCategory = ""
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
         //navigationController?.setNavigationBarHidden(false, animated: false)
         fetchCompanyOffers()
+        print(nameOfCategory)
     }
     //
     override func viewWillAppear(_ animated: Bool) {
@@ -31,11 +33,12 @@ class RedeemCompanyViewController: UITableViewController {
     func fetchCompanyOffers() {
         Database.database().reference().child("Offer_Category").observeSingleEvent(of: .value) { (snapshot) in
             if snapshot.exists() {
-                Database.database().reference().child("Offer_Category").observe(.childAdded) { (offercategorysnapshot) in
+                // Need to fix this so the "Food and drink" child is unique based on what we tapped to segue
+                Database.database().reference().child("Offer_Category").child(self.nameOfCategory).child("Offer_Company").observe(.childAdded) { (offercategorysnapshot) in
                     // Need to make this safe...
                     if let dictionary = offercategorysnapshot.value as? [String: AnyObject] {
-                        let offerCategory = OfferCategory()
-                        offerCategory.offerCategoryName = dictionary["offerCategoryName"] as? String
+                        let offerCategory = OfferCompany()
+                        offerCategory.offerCompanyName = dictionary["offerCompanyName"] as? String
                         self.offercategories.append(offerCategory)
                         self.tableView.reloadData()
                     }
@@ -59,7 +62,7 @@ class RedeemCompanyViewController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "redeemCompanyOfferCell", for: indexPath)
         
         let offer = offercategories[indexPath.row]
-        cell.textLabel?.text = offer.offerCategoryName
+        cell.textLabel?.text = offer.offerCompanyName
         //        if offer.cost != nil {
         //            cell.detailTextLabel?.text = ("Tap to redeem for \(offer.cost!) points.")
         //        } else {
