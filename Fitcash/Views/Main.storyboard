@@ -4,7 +4,6 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -114,6 +113,7 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Companies" id="i5B-R4-kq2"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <segue destination="3yM-CK-cCv" kind="show" identifier="goToRedeemOffer" id="AVQ-zx-f34"/>
                     </connections>
@@ -240,7 +240,7 @@
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lyv-hY-Nwm">
                                 <rect key="frame" x="35.666666666666657" y="396" width="343" height="30"/>
-                                <color key="backgroundColor" red="0.1453903168" green="0.63518619539999999" blue="0.30402433870000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.20539060240000001" green="0.469960928" blue="0.96475261450000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="343" id="CCW-RF-7Z4"/>
                                     <constraint firstAttribute="height" constant="30" id="URo-ar-vDN"/>
@@ -305,7 +305,7 @@
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kov-vI-35V">
                                 <rect key="frame" x="35.666666666666657" y="391" width="343" height="30"/>
-                                <color key="backgroundColor" red="0.1453903168" green="0.63518619539999999" blue="0.30402433870000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="343" id="2l9-dh-R3W"/>
                                 </constraints>
@@ -343,6 +343,7 @@
         <!--Navigation Controller-->
         <scene sceneID="Er7-9i-XkE">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xfl-iC-1UF" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController id="40L-nh-FMu" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="hJc-w0-tSp">
                         <rect key="frame" x="0.0" y="20" width="414" height="44"/>
@@ -352,7 +353,6 @@
                         <segue destination="vdS-Z5-1Ed" kind="relationship" relationship="rootViewController" id="SfK-Cm-ObU"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="xfl-iC-1UF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-5229" y="-690"/>
         </scene>
@@ -371,8 +371,10 @@
                                     <segue destination="alM-WU-3Xl" kind="show" identifier="goToLogin" id="Z6B-6h-UNF"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gf6-fG-TVH">
-                                <rect key="frame" x="178.66666666666666" y="303" width="57" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gf6-fG-TVH">
+                                <rect key="frame" x="158.66666666666666" y="307" width="97" height="26"/>
+                                <color key="backgroundColor" red="0.20539060240000001" green="0.469960928" blue="0.96475261450000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <inset key="contentEdgeInsets" minX="15" minY="2" maxX="15" maxY="2"/>
                                 <state key="normal" title="Register"/>
                                 <connections>
                                     <segue destination="ijF-cu-V6J" kind="show" identifier="goToRegistration" id="hUR-A0-W2G"/>
@@ -395,7 +397,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="r4j-dQ-eqk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-4313" y="-690"/>
+            <point key="canvasLocation" x="-4199" y="-690"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="Z00-8H-qOR">
@@ -541,6 +543,6 @@
         <image name="Workout_Icon" width="16.559999465942383" height="16.559999465942383"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="bgm-Ho-cSp"/>
+        <segue reference="5EL-7k-rtc"/>
     </inferredMetricsTieBreakers>
 </document>

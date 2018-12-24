@@ -42,6 +42,12 @@ class WorkoutViewController: UIViewController, CLLocationManagerDelegate, UIAppl
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        //navigationController?.navigationBar.topItem?.hidesBackButton = true
+       // self.navigationItem.leftBarButtonItem = nil
+        self.tabBarController?.navigationItem.leftBarButtonItem = nil
+        self.tabBarController?.navigationItem.hidesBackButton = true
+        self.tabBarController?.navigationItem.setHidesBackButton(true, animated: false)
+        //self.navigationItem.hidesBackButton = true
         locationManager.requestAlwaysAuthorization()
         timeLabel.text = String(counter)
         pauseButton.isEnabled = false
@@ -53,15 +59,11 @@ class WorkoutViewController: UIViewController, CLLocationManagerDelegate, UIAppl
         pointsEarnedThisWorkoutLabel.isHidden = true
         progressBar.setProgress(0.0, animated: false)
         progressBar.isHidden = true
-        navigationController?.navigationBar.topItem?.hidesBackButton = true
         NotificationCenter.default.addObserver(self, selector:#selector(upDateTimeDifference), name: UIApplication.willEnterForegroundNotification, object: nil)
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(true)
-        //navigationController?.setNavigationBarHidden(true, animated: true)
-        //navigationController?.navigationBar.backItem?.setHidesBackButton(true, animated: true)
-        navigationController?.navigationBar.topItem?.hidesBackButton = true
         tabBarController?.navigationItem.title = "Workout"
         //This loads data from firebase upon load
         //Need to make it if we cant connect to the internet, but are logged in, we access saved data on our plist

@@ -15,10 +15,12 @@ class SettingsViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.tabBarController?.navigationItem.leftBarButtonItem = nil
+        self.tabBarController?.navigationItem.hidesBackButton = true
+        self.tabBarController?.navigationItem.setHidesBackButton(true, animated: false)
     }
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(true)
-        navigationController?.navigationBar.topItem?.hidesBackButton = true
         tabBarController?.navigationItem.title = "Settings"
 
     }

@@ -20,13 +20,19 @@ class RedeemCategoryViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        //navigationController?.setNavigationBarHidden(false, animated: false)
+        self.navigationController?.navigationBar.topItem?.hidesBackButton = true
+        self.tabBarController?.navigationItem.leftBarButtonItem = nil
+        self.tabBarController?.navigationItem.hidesBackButton = true
+        self.tabBarController?.navigationItem.setHidesBackButton(true, animated: false)
         fetchCategoryOffers()
     }
     //
     override func viewWillAppear(_ animated: Bool) {
         //navigationController?.setNavigationBarHidden(true, animated: true)
-        navigationController?.navigationBar.topItem?.hidesBackButton = true
+        self.navigationController?.navigationBar.topItem?.hidesBackButton = true
+        self.tabBarController?.navigationItem.leftBarButtonItem = nil
+        self.tabBarController?.navigationItem.hidesBackButton = true
+        self.tabBarController?.navigationItem.setHidesBackButton(true, animated: false)
         tabBarController?.navigationItem.title = "Categories"
         //fetchOffers()
     }

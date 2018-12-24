@@ -16,13 +16,13 @@ class WalletViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        navigationController?.navigationBar.topItem?.hidesBackButton = true
+        self.tabBarController?.navigationItem.leftBarButtonItem = nil
+        self.tabBarController?.navigationItem.hidesBackButton = true
+        self.tabBarController?.navigationItem.setHidesBackButton(true, animated: false)
         fetchOffers()
     }
     //
     override func viewWillAppear(_ animated: Bool) {
-        //navigationController?.setNavigationBarHidden(true, animated: true)
-        navigationController?.navigationBar.topItem?.hidesBackButton = true
         tabBarController?.navigationItem.title = "My Wallet"
         //fetchOffers()
     }
