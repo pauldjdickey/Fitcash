@@ -9,7 +9,7 @@
 import UIKit
 import Firebase
 
-class RedeemViewController: UITableViewController {
+class RedeemCategoryViewController: UITableViewController {
     
     
     var offercategories = [OfferCategory]()
@@ -19,7 +19,7 @@ class RedeemViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         //navigationController?.setNavigationBarHidden(false, animated: false)
-        fetchOffers()
+        fetchCategoryOffers()
     }
     //
     override func viewWillAppear(_ animated: Bool) {
@@ -29,7 +29,7 @@ class RedeemViewController: UITableViewController {
         //fetchOffers()
     }
     //
-    func fetchOffers() {
+    func fetchCategoryOffers() {
         Database.database().reference().child("Offer_Category").observeSingleEvent(of: .value) { (snapshot) in
             if snapshot.exists() {
                 Database.database().reference().child("Offer_Category").observe(.childAdded) { (offercategorysnapshot) in
@@ -57,7 +57,7 @@ class RedeemViewController: UITableViewController {
     
     //This is what will go into the cells
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "redeemOfferCell", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "redeemCategoryOfferCell", for: indexPath)
         
         let offer = offercategories[indexPath.row]
         cell.textLabel?.text = offer.offerCategoryName
@@ -68,6 +68,13 @@ class RedeemViewController: UITableViewController {
 //        }
         return cell
     }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        performSegue(withIdentifier: "goToRedeemCompany", sender: self)
+        tableView.deselectRow(at: indexPath, animated: true)
+
+    }
+    
     
 //    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
 //        let offer = offercategories[indexPath.row]
