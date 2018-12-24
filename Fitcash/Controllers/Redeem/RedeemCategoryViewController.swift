@@ -84,7 +84,7 @@ class RedeemCategoryViewController: UITableViewController {
             }
         }
     }
-    
+
     
 //    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
 //        let offer = offercategories[indexPath.row]
@@ -213,4 +213,5 @@ class RedeemCategoryViewController: UITableViewController {
 //                }))
 //                self.present(redeemAlert, animated: true, completion: nil)
 //                tableView.deselectRow(at: indexPath, animated: true)
+
 }

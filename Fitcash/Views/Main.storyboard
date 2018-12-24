@@ -122,10 +122,10 @@
             </objects>
             <point key="canvasLocation" x="1299" y="-1016"/>
         </scene>
-        <!--Table View Controller-->
+        <!--Redeem Offer View Controller-->
         <scene sceneID="Jav-dc-BhN">
             <objects>
-                <tableViewController id="3yM-CK-cCv" sceneMemberID="viewController">
+                <tableViewController id="3yM-CK-cCv" customClass="RedeemOfferViewController" customModule="Fitcash" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="u5x-kM-z3S">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

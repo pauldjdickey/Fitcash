@@ -70,4 +70,19 @@ class RedeemCompanyViewController: UITableViewController {
         //        }
         return cell
     }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        performSegue(withIdentifier: "goToRedeemOffer", sender: self)
+        tableView.deselectRow(at: indexPath, animated: true)
+    }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "goToRedeemOffer" {
+            if let indexPath = tableView.indexPathForSelectedRow {
+                let destinationController = segue.destination as! RedeemOfferViewController
+                let offerCompany = offercategories[indexPath.row]
+                destinationController.nameOfCategory = nameOfCategory
+                destinationController.nameOfCompany = offerCompany.offerCompanyName!
+            }
+        }
+    }
 }
