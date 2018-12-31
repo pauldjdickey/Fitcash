@@ -34,10 +34,17 @@ class LogInViewController: UIViewController {
                 
                 if error != nil {
                     print(error!)
+                    print("Debug description = \(error.debugDescription)")
                     SVProgressHUD.dismiss()
-                    let logInAlert = UIAlertController(title: "Ooops!", message: "Your email and/or password does not match our records.", preferredStyle: UIAlertController.Style.alert)
-                    logInAlert.addAction(UIAlertAction(title: "Try again", style: UIAlertAction.Style.default, handler: nil))
-                    self.present(logInAlert, animated: true, completion: nil)
+                    if error.debugDescription.contains("password is invalid") {
+                        let logInAlert = UIAlertController(title: "Invalid Email or Password", message: "Your email and/or password does not match our records.", preferredStyle: UIAlertController.Style.alert)
+                        logInAlert.addAction(UIAlertAction(title: "Try again", style: UIAlertAction.Style.default, handler: nil))
+                        self.present(logInAlert, animated: true, completion: nil)
+                    } else if error.debugDescription.contains("Network error") {
+                        let logInAlertNetwork = UIAlertController(title: "Network Error", message: "Please check your network connection to be able to log in.", preferredStyle: UIAlertController.Style.alert)
+                        logInAlertNetwork.addAction(UIAlertAction(title: "Try again", style: UIAlertAction.Style.default, handler: nil))
+                        self.present(logInAlertNetwork, animated: true, completion: nil)
+                    }
                 } else {
                     print("Log in successful!")
                     
