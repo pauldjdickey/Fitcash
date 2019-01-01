@@ -13,6 +13,8 @@ import CoreLocation
 class WalletViewController: UITableViewController {
     
     var offers = [Offer]()
+    let spinner = UIActivityIndicatorView(style: .gray)
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,9 +33,12 @@ class WalletViewController: UITableViewController {
         
         Database.database().reference().child("Redeemed").child(Auth.auth().currentUser!.uid).observeSingleEvent(of: .value) { (snapshot) in
             if snapshot.exists() {
+                self.tableView.backgroundView = self.spinner
+                self.spinner.startAnimating()
                 Database.database().reference().child("Redeemed").child(Auth.auth().currentUser!.uid).observe(.childAdded) { (redeemsnapshot) in
                     // Need to make this safe...
                     if let dictionary = redeemsnapshot.value as? [String: AnyObject] {
+                        self.spinner.stopAnimating()
                         let offer = Offer()
                         offer.uuid = dictionary["uuid"] as? String
                         offer.title = dictionary["title"] as? String
@@ -43,6 +48,7 @@ class WalletViewController: UITableViewController {
                 }
             } else {
                 print("No redeemable coupons")
+                self.spinner.stopAnimating()
             }
         }
     }

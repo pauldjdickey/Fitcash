@@ -15,6 +15,8 @@ class RedeemOfferViewController: UITableViewController {
     let pointsDB = Database.database().reference().child("Users")
     var nameOfCategory = ""
     var nameOfCompany = ""
+    let spinner = UIActivityIndicatorView(style: .gray)
+
     
     
     override func viewDidLoad() {
@@ -36,9 +38,12 @@ class RedeemOfferViewController: UITableViewController {
         Database.database().reference().child("Offer_Category").observeSingleEvent(of: .value) { (snapshot) in
             if snapshot.exists() {
                 // Need to fix this so the "Food and drink" child is unique based on what we tapped to segue
+                self.tableView.backgroundView = self.spinner
+                self.spinner.startAnimating()
                 Database.database().reference().child("Offer_Category").child(self.nameOfCategory).child("Offer_Company").child(self.nameOfCompany).child("Offers").observe(.childAdded) { (offercategorysnapshot) in
                     // Need to make this safe...
                     if let dictionary = offercategorysnapshot.value as? [String: AnyObject] {
+                        self.spinner.stopAnimating()
                         let offerCategory = Offer()
                         offerCategory.cost = dictionary["cost"] as? Int
                         offerCategory.title = dictionary["title"] as? String
@@ -48,6 +53,7 @@ class RedeemOfferViewController: UITableViewController {
                 }
             } else {
                 print("No categories available")
+                self.spinner.stopAnimating()
             }
         }
         

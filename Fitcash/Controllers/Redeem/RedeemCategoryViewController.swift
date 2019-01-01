@@ -16,6 +16,8 @@ class RedeemCategoryViewController: UITableViewController {
     let pointsDB = Database.database().reference().child("Users")
     var indexPathRow = 0
     var nameOfCategorySelected = ""
+    let spinner = UIActivityIndicatorView(style: .gray)
+
     
     
     override func viewDidLoad() {
@@ -35,14 +37,19 @@ class RedeemCategoryViewController: UITableViewController {
         self.tabBarController?.navigationItem.setHidesBackButton(true, animated: false)
         tabBarController?.navigationItem.title = "Categories"
         //fetchOffers()
+        
+
     }
     //
     func fetchCategoryOffers() {
         Database.database().reference().child("Offer_Category").observeSingleEvent(of: .value) { (snapshot) in
             if snapshot.exists() {
+                self.tableView.backgroundView = self.spinner
+                self.spinner.startAnimating()
                 Database.database().reference().child("Offer_Category").observe(.childAdded) { (offercategorysnapshot) in
                     // Need to make this safe...
                     if let dictionary = offercategorysnapshot.value as? [String: AnyObject] {
+                        self.spinner.stopAnimating()
                         let offerCategory = OfferCategory()
                         offerCategory.offerCategoryName = dictionary["offerCategoryName"] as? String
                         self.offercategories.append(offerCategory)
@@ -51,6 +58,8 @@ class RedeemCategoryViewController: UITableViewController {
                 }
             } else {
                 print("No categories available")
+                self.spinner.stopAnimating()
+
             }
         }
         
