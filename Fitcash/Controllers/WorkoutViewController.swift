@@ -207,6 +207,9 @@ class WorkoutViewController: UIViewController, CLLocationManagerDelegate, UIAppl
     }
     @objc func upDateTimeDifference() {
         print("User Loaded Back")
+        print(isPlaying)
+        print(appDelegate.userLeftApp)
+        print(appDelegate.userLeftRegion)
         if isPlaying == true {
             print("Timer is running and now updated")
             counter = counter + appDelegate.timeDifference
@@ -214,8 +217,9 @@ class WorkoutViewController: UIViewController, CLLocationManagerDelegate, UIAppl
             counter = counter + appDelegate.timeDifferenceLeftRegion
             let counterHour = counter/3600
             let counterMinute = counter/60
+            let counterMinuteTruncate = counterMinute.truncatingRemainder(dividingBy: 60)
             let counterSecond = counter.truncatingRemainder(dividingBy: 60)
-            timeLabel.text = ("\(String(format: "%02d", Int(counterHour))):\(String(format: "%02d", Int(counterMinute))):\(String(format: "%02d", Int(counterSecond)))")
+            timeLabel.text = ("\(String(format: "%02d", Int(counterHour))):\(String(format: "%02d", Int(counterMinuteTruncate))):\(String(format: "%02d", Int(counterSecond)))")
             //appDelegate.timeDifferenceLeftRegion = 0.0
             appDelegate.userLeftRegion = false
             print("Time is stopped because user left area, and is now updated")
