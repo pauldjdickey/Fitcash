@@ -63,7 +63,7 @@ class LocationsModel {
                                                       longitude:-121.8109).distance(from: fromLocation),
                     coordinate : CLLocationCoordinate2DMake(36.6654,-121.8109)),
             Places( title: "In Shape Seaside",
-                    cllocation: CLLocation(latitude:36.5967713919556,longitude:-121.85367114721271), regionRadius:60.0, location:"In Shape Seaside",
+                    cllocation: CLLocation(latitude:36.5967713919556,longitude:-121.85367114721271), regionRadius:100.0, location:"In Shape Seaside",
                     type: "Gym",distance : CLLocation(latitude:36.5967713919556,
                                                       longitude:-121.85367114721271).distance(from: fromLocation),
                     coordinate : CLLocationCoordinate2DMake(36.5967713919556,-121.85367114721271)),

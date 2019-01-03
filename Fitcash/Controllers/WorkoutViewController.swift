@@ -67,15 +67,17 @@ class WorkoutViewController: UIViewController, CLLocationManagerDelegate, UIAppl
         tabBarController?.navigationItem.title = "Workout"
         //This loads data from firebase upon load
         //Need to make it if we cant connect to the internet, but are logged in, we access saved data on our plist
+        self.pointsActivityMonitor.isHidden = false
+        self.pointsActivityMonitor.startAnimating()
         pointsDB.child(Auth.auth().currentUser!.uid).observeSingleEvent(of: .value, with: { (snapshot) in
             if snapshot.exists() {
                
                 self.pointLabel.isHidden = true
-                self.pointsActivityMonitor.isHidden = false
-                self.pointsActivityMonitor.startAnimating()
                 self.pointsDB.child(Auth.auth().currentUser!.uid).child("points").observe(.value) { (loadsnapshot) in
                     if let snapshotValue = loadsnapshot.value as? Int {
                         let points = snapshotValue
+                        self.pointsActivityMonitor.stopAnimating()
+                        self.pointsActivityMonitor.isHidden = true
                         print("PRINTED POINTS UPON LOAD: \(points)")
                         self.pointLabel.text = ("\(points)")
                         self.previousPoints = Int(points)
@@ -86,6 +88,8 @@ class WorkoutViewController: UIViewController, CLLocationManagerDelegate, UIAppl
                 }
             } else {
                 print("No user data to load")
+                self.pointsActivityMonitor.stopAnimating()
+                self.pointsActivityMonitor.isHidden = true
                 self.pointLabel.isHidden = false
                 self.pointLabel.text = "0"
             }

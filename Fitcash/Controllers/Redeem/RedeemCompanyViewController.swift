@@ -33,11 +33,12 @@ class RedeemCompanyViewController: UITableViewController {
     }
     //
     func fetchCompanyOffers() {
+        self.tableView.backgroundView = self.spinner
+        self.spinner.startAnimating()
         Database.database().reference().child("Offer_Category").observeSingleEvent(of: .value) { (snapshot) in
             if snapshot.exists() {
                 // Need to fix this so the "Food and drink" child is unique based on what we tapped to segue
-                self.tableView.backgroundView = self.spinner
-                self.spinner.startAnimating()
+                
                 Database.database().reference().child("Offer_Category").child(self.nameOfCategory).child("Offer_Company").observe(.childAdded) { (offercategorysnapshot) in
                     // Need to make this safe...
                     if let dictionary = offercategorysnapshot.value as? [String: AnyObject] {

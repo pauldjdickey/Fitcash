@@ -42,10 +42,10 @@ class RedeemCategoryViewController: UITableViewController {
     }
     //
     func fetchCategoryOffers() {
+        self.tableView.backgroundView = self.spinner
+        self.spinner.startAnimating()
         Database.database().reference().child("Offer_Category").observeSingleEvent(of: .value) { (snapshot) in
             if snapshot.exists() {
-                self.tableView.backgroundView = self.spinner
-                self.spinner.startAnimating()
                 Database.database().reference().child("Offer_Category").observe(.childAdded) { (offercategorysnapshot) in
                     // Need to make this safe...
                     if let dictionary = offercategorysnapshot.value as? [String: AnyObject] {
