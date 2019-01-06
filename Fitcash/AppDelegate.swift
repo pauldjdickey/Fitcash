@@ -39,15 +39,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         FirebaseApp.configure()
         
-        
-        
-        
         if Auth.auth().currentUser != nil {
             //Go into app
             let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
             let tabBarController = storyBoard.instantiateViewController(withIdentifier: "mainTabBarController") as! UITabBarController
             self.window?.rootViewController = tabBarController
-            
 ////            let tabController = UITabBarController(coder: workoutViewController)
 ////            self.window?.rootViewController = tabController
 //

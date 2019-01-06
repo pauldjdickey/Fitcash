@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="14l-vo-mwb">
-    <device id="retina5_5" orientation="portrait">
+    <device id="retina5_9" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -14,11 +14,11 @@
             <objects>
                 <viewController id="A3R-I3-e9l" customClass="SettingsViewController" customModule="Fitcash" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="vUr-lh-Kt6">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UUV-xm-VAy">
-                                <rect key="frame" x="179.66666666666666" y="353" width="55" height="30"/>
+                                <rect key="frame" x="160" y="391" width="55" height="30"/>
                                 <state key="normal" title="Log Out"/>
                                 <connections>
                                     <action selector="logOutPressed:" destination="A3R-I3-e9l" eventType="touchUpInside" id="DhR-pn-P8n"/>
@@ -43,19 +43,19 @@
             <objects>
                 <tableViewController id="zH0-bZ-Reh" customClass="RedeemCategoryViewController" customModule="Fitcash" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="fw5-pz-06m">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="redeemCategoryOfferCell" textLabel="1Kn-jk-GEb" style="IBUITableViewCellStyleDefault" id="zd7-cu-9dM">
-                                <rect key="frame" x="0.0" y="28" width="414" height="44"/>
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="zd7-cu-9dM" id="uQT-w3-Rcj">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.666666666666664"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.666666666666664"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="1Kn-jk-GEb">
-                                            <rect key="frame" x="20" y="0.0" width="374" height="43.666666666666664"/>
+                                            <rect key="frame" x="16" y="0.0" width="343" height="43.666666666666664"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
@@ -84,19 +84,19 @@
             <objects>
                 <tableViewController id="woS-oR-8uq" customClass="RedeemCompanyViewController" customModule="Fitcash" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="EuK-Ff-2Bj">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="redeemCompanyOfferCell" textLabel="Y4D-0s-r5f" style="IBUITableViewCellStyleDefault" id="VRk-0i-X12">
-                                <rect key="frame" x="0.0" y="28" width="414" height="44"/>
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="VRk-0i-X12" id="sgN-Hr-imh">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.666666666666664"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.666666666666664"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Y4D-0s-r5f">
-                                            <rect key="frame" x="20" y="0.0" width="374" height="43.666666666666664"/>
+                                            <rect key="frame" x="16" y="0.0" width="343" height="43.666666666666664"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
@@ -126,26 +126,26 @@
             <objects>
                 <tableViewController id="3yM-CK-cCv" customClass="RedeemOfferViewController" customModule="Fitcash" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="u5x-kM-z3S">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="redeemOfferCell" textLabel="NPl-G6-rZh" detailTextLabel="ydH-6u-IDy" style="IBUITableViewCellStyleSubtitle" id="dE5-o9-P5y">
-                                <rect key="frame" x="0.0" y="28" width="414" height="44"/>
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="dE5-o9-P5y" id="byN-xy-jgd">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.666666666666664"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.666666666666664"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="NPl-G6-rZh">
-                                            <rect key="frame" x="20.000000000000004" y="5" width="33.333333333333336" height="20.333333333333332"/>
+                                            <rect key="frame" x="16.000000000000004" y="5" width="33.333333333333336" height="20.333333333333332"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ydH-6u-IDy">
-                                            <rect key="frame" x="19.999999999999996" y="25.333333333333332" width="43.666666666666664" height="14.333333333333334"/>
+                                            <rect key="frame" x="15.999999999999996" y="25.333333333333332" width="43.666666666666664" height="14.333333333333334"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                             <nil key="textColor"/>
@@ -170,26 +170,26 @@
             <objects>
                 <tableViewController id="2ub-ec-7YS" customClass="WalletViewController" customModule="Fitcash" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="i3L-nC-BhV">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="walletCell" textLabel="qzY-25-haX" detailTextLabel="cDs-nF-Ia9" style="IBUITableViewCellStyleSubtitle" id="vud-pC-JM5">
-                                <rect key="frame" x="0.0" y="28" width="414" height="44"/>
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="vud-pC-JM5" id="fVR-Vt-3GA">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.666666666666664"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.666666666666664"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="qzY-25-haX">
-                                            <rect key="frame" x="20.000000000000004" y="5" width="33.333333333333336" height="20.333333333333332"/>
+                                            <rect key="frame" x="16.000000000000004" y="5" width="33.333333333333336" height="20.333333333333332"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="cDs-nF-Ia9">
-                                            <rect key="frame" x="19.999999999999996" y="25.333333333333332" width="43.666666666666664" height="14.333333333333334"/>
+                                            <rect key="frame" x="15.999999999999996" y="25.333333333333332" width="43.666666666666664" height="14.333333333333334"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                             <nil key="textColor"/>
@@ -215,11 +215,11 @@
             <objects>
                 <viewController id="ijF-cu-V6J" customClass="RegisterViewController" customModule="Fitcash" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="WSv-ZT-YAC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jP9-Ty-Ktg">
-                                <rect key="frame" x="35.666666666666657" y="320" width="343" height="30"/>
+                                <rect key="frame" x="16" y="358" width="343" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="343" id="fJ9-Vf-Ixq"/>
                                     <constraint firstAttribute="height" constant="30" id="khQ-Jz-6PF"/>
@@ -228,7 +228,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Gn7-Zj-DgM">
-                                <rect key="frame" x="35.666666666666657" y="353" width="343" height="30"/>
+                                <rect key="frame" x="16" y="391" width="343" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="x5A-zd-SFf"/>
                                     <constraint firstAttribute="width" constant="343" id="zbb-xq-lXv"/>
@@ -237,7 +237,7 @@
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lyv-hY-Nwm">
-                                <rect key="frame" x="35.666666666666657" y="396" width="343" height="30"/>
+                                <rect key="frame" x="16" y="434" width="343" height="30"/>
                                 <color key="backgroundColor" red="0.20539060240000001" green="0.469960928" blue="0.96475261450000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="343" id="CCW-RF-7Z4"/>
@@ -280,11 +280,11 @@
             <objects>
                 <viewController id="alM-WU-3Xl" customClass="LogInViewController" customModule="Fitcash" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="xzI-9z-nYr">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="E7n-dA-BSN">
-                                <rect key="frame" x="35.666666666666657" y="315" width="343" height="30"/>
+                                <rect key="frame" x="16" y="353" width="343" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="4c5-dA-C6U"/>
                                     <constraint firstAttribute="width" constant="343" id="T1A-DA-jrv"/>
@@ -293,7 +293,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HAO-aa-y3b">
-                                <rect key="frame" x="35.666666666666657" y="353" width="343" height="30"/>
+                                <rect key="frame" x="16" y="391" width="343" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="343" id="J84-br-lIT"/>
                                     <constraint firstAttribute="height" constant="30" id="bV8-gv-ZaI"/>
@@ -302,7 +302,7 @@
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kov-vI-35V">
-                                <rect key="frame" x="35.666666666666657" y="391" width="343" height="30"/>
+                                <rect key="frame" x="16" y="429" width="343" height="30"/>
                                 <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="343" id="2l9-dh-R3W"/>
@@ -343,18 +343,18 @@
             <objects>
                 <viewController storyboardIdentifier="welcomeViewController" id="vdS-Z5-1Ed" customClass="WelcomeViewController" customModule="Fitcash" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="wEM-yS-B4f">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HRN-HI-IwW">
-                                <rect key="frame" x="186" y="353" width="42" height="30"/>
+                                <rect key="frame" x="166.66666666666666" y="391" width="42" height="30"/>
                                 <state key="normal" title="Log In"/>
                                 <connections>
                                     <segue destination="alM-WU-3Xl" kind="show" identifier="goToLogin" id="Z6B-6h-UNF"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gf6-fG-TVH">
-                                <rect key="frame" x="158.66666666666666" y="307" width="97" height="26"/>
+                                <rect key="frame" x="139" y="345" width="97" height="26"/>
                                 <color key="backgroundColor" red="0.20539060240000001" green="0.469960928" blue="0.96475261450000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <inset key="contentEdgeInsets" minX="15" minY="2" maxX="15" maxY="2"/>
                                 <state key="normal" title="Register"/>
@@ -407,75 +407,75 @@
             <objects>
                 <viewController storyboardIdentifier="workoutViewController" id="BYZ-38-t0r" customClass="WorkoutViewController" customModule="Fitcash" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00:00" textAlignment="justified" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WNE-CM-whZ">
-                                <rect key="frame" x="101.66666666666669" y="124" width="211" height="60"/>
+                                <rect key="frame" x="82" y="148" width="211" height="60"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="50"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n6M-K0-0BE">
-                                <rect key="frame" x="164.66666666666666" y="273" width="85" height="30"/>
+                                <rect key="frame" x="145" y="297" width="85" height="30"/>
                                 <state key="normal" title="Claim Points"/>
                                 <connections>
                                     <action selector="resetTimer:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1Tl-kz-FCN"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total Fitcash in Bank" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h69-Ko-KfS">
-                                <rect key="frame" x="128.66666666666666" y="451" width="156.99999999999997" height="21"/>
+                                <rect key="frame" x="109" y="475" width="157" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FXy-vC-q1g">
-                                <rect key="frame" x="186" y="235" width="42" height="30"/>
+                                <rect key="frame" x="166.66666666666666" y="259" width="42" height="30"/>
                                 <state key="normal" title="Pause"/>
                                 <connections>
                                     <action selector="pauseTimer:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dPO-5B-iRo"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FLW-Lo-kRr">
-                                <rect key="frame" x="190" y="197" width="34" height="30"/>
+                                <rect key="frame" x="170.66666666666666" y="221" width="34" height="30"/>
                                 <state key="normal" title="Start"/>
                                 <connections>
                                     <action selector="startTimer:" destination="BYZ-38-t0r" eventType="touchUpInside" id="n9D-8s-zFH"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i8P-PH-sto">
-                                <rect key="frame" x="159" y="197" width="96" height="30"/>
+                                <rect key="frame" x="139.66666666666666" y="221" width="96" height="30"/>
                                 <state key="normal" title="Start Workout"/>
                                 <connections>
                                     <action selector="checkInButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="D76-V0-BaO"/>
                                 </connections>
                             </button>
                             <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="i1S-aa-aLo">
-                                <rect key="frame" x="132" y="330" width="150" height="2"/>
+                                <rect key="frame" x="112.66666666666669" y="354" width="150" height="2"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="150" id="m0n-TL-cgO"/>
                                 </constraints>
                             </progressView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fitcash Earned this Workout" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aOP-JV-JMW">
-                                <rect key="frame" x="99.666666666666686" y="340" width="215" height="21"/>
+                                <rect key="frame" x="80" y="364" width="215" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="piu-cd-yYL">
-                                <rect key="frame" x="201.66666666666666" y="369" width="11" height="21"/>
+                                <rect key="frame" x="182" y="393" width="11" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b0S-1i-BNl">
-                                <rect key="frame" x="200" y="480" width="14" height="21"/>
+                                <rect key="frame" x="180.66666666666666" y="504" width="14" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="vSH-1k-DvV">
-                                <rect key="frame" x="197" y="501" width="20" height="20"/>
+                                <rect key="frame" x="177.66666666666666" y="525" width="20" height="20"/>
                             </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -530,7 +530,7 @@
                     <tabBarItem key="tabBarItem" title="Redeem" image="Redeem_Icon" id="v4c-cf-mie"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="TZ1-V8-kU2">
-                        <rect key="frame" x="0.0" y="20" width="414" height="44"/>
+                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -549,7 +549,7 @@
                     <tabBarItem key="tabBarItem" title="Workout" image="Workout_Icon" id="k9M-wP-Ago"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="T58-T7-woT">
-                        <rect key="frame" x="0.0" y="20" width="414" height="44"/>
+                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -568,7 +568,7 @@
                     <tabBarItem key="tabBarItem" title="My Wallet" image="Wallet_Icon" id="JVW-ls-N4D"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="JbN-o8-pt8">
-                        <rect key="frame" x="0.0" y="20" width="414" height="44"/>
+                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -587,7 +587,7 @@
                     <tabBarItem key="tabBarItem" title="Settings" image="Settings_Icon" id="P4K-6B-j5Y"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="pbg-ni-ylU">
-                        <rect key="frame" x="0.0" y="20" width="414" height="44"/>
+                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -605,7 +605,7 @@
                 <navigationController storyboardIdentifier="mainNavigationController" title="Fitcash" automaticallyAdjustsScrollViewInsets="NO" id="14l-vo-mwb" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="XQQ-Gj-fZP">
-                        <rect key="frame" x="0.0" y="20" width="414" height="44"/>
+                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>

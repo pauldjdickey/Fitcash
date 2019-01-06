@@ -12,5 +12,6 @@ class Offer: NSObject {
     var cost: Int?
     var title: String?
     var uuid: String?
+    var code: String?
 }
 

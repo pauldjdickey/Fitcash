@@ -42,6 +42,7 @@ class WalletViewController: UITableViewController {
                         let offer = Offer()
                         offer.uuid = dictionary["uuid"] as? String
                         offer.title = dictionary["title"] as? String
+                        offer.code = dictionary["code"] as? String
                         self.offers.append(offer)
                         self.tableView.reloadData()
                     }
@@ -73,7 +74,7 @@ class WalletViewController: UITableViewController {
         let useOfferAlert = UIAlertController(title: "Use your offer", message: "Are you sure you'd like to use your offer '\(offer.title!)'? Make sure you are in the location to use it.", preferredStyle: UIAlertController.Style.alert)
         useOfferAlert.addAction(UIAlertAction(title: "Yes", style: UIAlertAction.Style.default, handler: { action in
             print("Present confirmation")
-            let confirmUseOfferAlert = UIAlertController(title: "USE OFFER", message: "Clicking 'USE OFFER' will use your coupon '\(offer.title!)'", preferredStyle: UIAlertController.Style.actionSheet)
+            let confirmUseOfferAlert = UIAlertController(title: "USE OFFER", message: "Clicking 'USE OFFER' will use your coupon code '\(offer.code!)'", preferredStyle: UIAlertController.Style.actionSheet)
             confirmUseOfferAlert.addAction(UIAlertAction(title: "USE OFFER", style: UIAlertAction.Style.destructive, handler: { action in
               print("Delete the current selection")
                print(offer.uuid!)

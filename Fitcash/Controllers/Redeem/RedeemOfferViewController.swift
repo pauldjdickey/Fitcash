@@ -48,6 +48,7 @@ class RedeemOfferViewController: UITableViewController {
                         let offerCategory = Offer()
                         offerCategory.cost = dictionary["cost"] as? Int
                         offerCategory.title = dictionary["title"] as? String
+                        offerCategory.code = dictionary["code"] as? String
                         self.offers.append(offerCategory)
                         self.tableView.reloadData()
                     }
@@ -107,9 +108,10 @@ class RedeemOfferViewController: UITableViewController {
                                     //THIS IS WHERE WE NEED TO SAVE THE OFFER TO OUR FIREBASE WALLET
                                     //Right now this is replacing our points value, for some reason, how do we fix that?
                                     let currentOffer = offer.title
+                                    let currentOfferCode = offer.code
                                     let autoIDRef = Database.database().reference().child("Redeemed").child(Auth.auth().currentUser!.uid).childByAutoId()
                                     let autoIDRefString = autoIDRef.key
-                                    let offers2 = ["title": currentOffer, "uuid": autoIDRefString]
+                                    let offers2 = ["title": currentOffer, "uuid": autoIDRefString, "code": currentOfferCode]
                                     
                                     autoIDRef.updateChildValues(offers2 as [AnyHashable : Any])
                                     
