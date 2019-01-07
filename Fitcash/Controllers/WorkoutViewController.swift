@@ -24,6 +24,7 @@ class WorkoutViewController: UIViewController, CLLocationManagerDelegate, UIAppl
     let defaults = UserDefaults.standard
     let formatter = NumberFormatter()
     var geofenceRegion = CLCircularRegion()
+    var favoriteGymRegion = CLCircularRegion()
     var previousPoints:Int = 0
     var currentPoints:Int = 0
     var counter = 0.0
@@ -60,6 +61,20 @@ class WorkoutViewController: UIViewController, CLLocationManagerDelegate, UIAppl
         progressBar.setProgress(0.0, animated: false)
         progressBar.isHidden = true
         NotificationCenter.default.addObserver(self, selector:#selector(upDateTimeDifference), name: UIApplication.willEnterForegroundNotification, object: nil)
+        
+        let favoriteGeofenceRegionCenter = CLLocationCoordinate2D(
+            latitude: 36.6157,
+            longitude: -121.8285)
+        
+        favoriteGymRegion = CLCircularRegion(
+            center: favoriteGeofenceRegionCenter,
+            radius: locationsModel.geoFenceRadius * 1.10,
+            identifier: "FavoriteGymIdentifier"
+        )
+        favoriteGymRegion.notifyOnEntry = true
+        // This will only notify us or do something when we have left
+        print("Monitoring for favorite location has started")
+
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -68,6 +83,7 @@ class WorkoutViewController: UIViewController, CLLocationManagerDelegate, UIAppl
         //This loads data from firebase upon load
         //Need to make it if we cant connect to the internet, but are logged in, we access saved data on our plist
         self.pointsActivityMonitor.isHidden = false
+        self.locationManager.startMonitoring(for: favoriteGymRegion)
         self.pointsActivityMonitor.startAnimating()
         pointsDB.child(Auth.auth().currentUser!.uid).observeSingleEvent(of: .value, with: { (snapshot) in
             if snapshot.exists() {
@@ -110,7 +126,8 @@ class WorkoutViewController: UIViewController, CLLocationManagerDelegate, UIAppl
         counter = 0.0
         timeLabel.text = "00:00:00"
         print("PROGRESS BAR PROCESS IS \(progressBar.progress) AT CHECK IN BUTTON PRESS")
-        
+        print("Monitoring for favorite location has ended")
+
     }
     @IBAction func startTimer(_ sender: Any) {
         if(isPlaying) {

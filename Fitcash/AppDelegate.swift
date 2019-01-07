@@ -117,6 +117,43 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 print("Error adding notification with identifier: \(identifier)")
             }
         })
+        print("Exit Event Notification Triggered")
+
+    }
+    
+    func handleEnterEvent(forRegion regionEnter: CLRegion!) {
+        
+        // customize your notification content
+        let content = UNMutableNotificationContent()
+        content.title = "Are you ready to workout?"
+        content.body = "You are at your favorite gym. Go to the app to start claiming your points!"
+        content.sound = UNNotificationSound.default
+        
+        // when the notification will be triggered
+        let timeInSeconds: TimeInterval = 1
+        // the actual trigger object
+        let trigger = UNTimeIntervalNotificationTrigger(
+            timeInterval: timeInSeconds,
+            repeats: false
+        )
+        
+        // notification unique identifier, for this example, same as the region to avoid duplicate notifications
+        let identifierEnter = regionEnter.identifier
+        
+        // the notification request object
+        let request = UNNotificationRequest(
+            identifier: identifierEnter,
+            content: content,
+            trigger: trigger
+        )
+        
+        // trying to add the notification request to notification center
+        notificationCenter.add(request, withCompletionHandler: { (error) in
+            if error != nil {
+                print("Error adding notification with identifier: \(identifierEnter)")
+            }
+        })
+        print("Enter Event Notification Triggered")
     }
 
     func applicationWillResignActive(_ application: UIApplication) {
@@ -166,26 +203,29 @@ extension AppDelegate: CLLocationManagerDelegate {
             //let state = UIApplication.shared.applicationState
             if appTerminated == false {
                 self.handleEvent(forRegion: region)
+                print("didExitRegion has been triggered")
             } else {
-            
+                
             }
             userLeftRegion = true
             print("User has left the area and value has been set to true")
             leftRegionDateTime = Date()
             leftRegionTime = leftRegionDateTime.timeIntervalSinceReferenceDate
             print(leftRegionTime)
-            }
         }
-        // This will be activated once the user has moved and left the geofence location. It will then handle the event to send a notification
     }
-    
     // called when user Enters a monitored region
-    //    func locationManager(_ manager: CLLocationManager, didEnterRegion region: CLRegion) {
-    //        if region is CLCircularRegion {
-    //            // Do what you want if this information
-    //            self.handleEvent(forRegion: region)
-    //        }
-    //    }
+    func locationManager(_ manager: CLLocationManager, didEnterRegion region: CLRegion) {
+        if region is CLCircularRegion {
+            // Do what you want if this information
+            
+            self.handleEnterEvent(forRegion: region)
+            print("didEnterRegion has been triggered")
+
+        }
+    }
+}
+
 extension AppDelegate: UNUserNotificationCenterDelegate {
     
     func userNotificationCenter(_ center: UNUserNotificationCenter, willPresent notification: UNNotification, withCompletionHandler completionHandler: @escaping (UNNotificationPresentationOptions) -> Void) {
