@@ -41,6 +41,9 @@
                         <viewLayoutGuide key="safeArea" id="rpC-4n-aio"/>
                     </view>
                     <navigationItem key="navigationItem" title="Settings" id="eZN-SP-c5T"/>
+                    <connections>
+                        <outlet property="favoriteGymPickerView" destination="KNV-87-1IU" id="r8c-UX-n9z"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qth-A2-swg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
