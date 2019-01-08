@@ -24,26 +24,15 @@
                                     <action selector="logOutPressed:" destination="A3R-I3-e9l" eventType="touchUpInside" id="DhR-pn-P8n"/>
                                 </connections>
                             </button>
-                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KNV-87-1IU">
-                                <rect key="frame" x="27.666666666666657" y="478" width="320" height="100"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="100" id="RYk-Ut-YHv"/>
-                                </constraints>
-                            </pickerView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="UUV-xm-VAy" firstAttribute="centerY" secondItem="vUr-lh-Kt6" secondAttribute="centerY" id="JqZ-Ib-HRK"/>
-                            <constraint firstItem="KNV-87-1IU" firstAttribute="centerX" secondItem="vUr-lh-Kt6" secondAttribute="centerX" id="ZSx-If-QoP"/>
-                            <constraint firstItem="KNV-87-1IU" firstAttribute="top" secondItem="UUV-xm-VAy" secondAttribute="bottom" constant="57" id="bnp-Dc-btg"/>
                             <constraint firstItem="UUV-xm-VAy" firstAttribute="centerX" secondItem="vUr-lh-Kt6" secondAttribute="centerX" id="bqT-XA-UfC"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="rpC-4n-aio"/>
                     </view>
                     <navigationItem key="navigationItem" title="Settings" id="eZN-SP-c5T"/>
-                    <connections>
-                        <outlet property="favoriteGymPickerView" destination="KNV-87-1IU" id="r8c-UX-n9z"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qth-A2-swg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

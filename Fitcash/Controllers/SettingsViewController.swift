@@ -11,14 +11,12 @@ import Firebase
 import CoreLocation
 
 
-class SettingsViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
+class SettingsViewController: UIViewController {
    
     
     
     let defaults = UserDefaults.standard
-    @IBOutlet weak var favoriteGymPickerView: UIPickerView!
     
-    var pickerData: [String] = [String]()
     
     
     override func viewDidLoad() {
@@ -26,37 +24,19 @@ class SettingsViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
         self.tabBarController?.navigationItem.leftBarButtonItem = nil
         self.tabBarController?.navigationItem.hidesBackButton = true
         self.tabBarController?.navigationItem.setHidesBackButton(true, animated: false)
-        
-        self.favoriteGymPickerView.delegate = self
-        self.favoriteGymPickerView.dataSource = self
-        
-        pickerData = ["Item 1", "Item 2", "Item 3", "Item 4", "Item 5", "Item 6"]
     }
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(true)
         tabBarController?.navigationItem.title = "Settings"
 
     }
-    func numberOfComponents(in pickerView: UIPickerView) -> Int {
-        return 1
-    }
-    
-    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
-        return pickerData.count
-    }
-    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
-        return pickerData[row]
-    }
-    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
-        print("\(pickerData[row])")
-    }
 
-    
+
     @IBAction func logOutPressed(_ sender: Any) {
         do {
             try Auth.auth().signOut()
             //let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
-           // let welcomeViewController = storyBoard.instantiateViewController(withIdentifier: "welcomeViewController") as! WelcomeViewController
+            // let welcomeViewController = storyBoard.instantiateViewController(withIdentifier: "welcomeViewController") as! WelcomeViewController
             //let navigationController = UINavigationController(rootViewController: welcomeViewController)
             //present(welcomeViewController, animated: false, completion: nil)
             

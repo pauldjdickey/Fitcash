@@ -24,7 +24,19 @@ class WorkoutViewController: UIViewController, CLLocationManagerDelegate, UIAppl
     let defaults = UserDefaults.standard
     let formatter = NumberFormatter()
     var geofenceRegion = CLCircularRegion()
-    var favoriteGymRegion = CLCircularRegion()
+    var bearCaveGeoFence = CLCircularRegion()
+    var ottersGeoFence = CLCircularRegion()
+    var anyTimeFitnessGeoFence = CLCircularRegion()
+    var inShapeMontereyGeoFence = CLCircularRegion()
+    var crossfitMontereyGeoFence = CLCircularRegion()
+    var firstCityCrossfitGeoFence = CLCircularRegion()
+    var inShapePacificGroveGeoFence = CLCircularRegion()
+    var inShapeCarmelGeoFence = CLCircularRegion()
+    var cycleBarCarmelGeoFence = CLCircularRegion()
+    var montereySportsCenterGeoFence = CLCircularRegion()
+    var goldsGymGeoFence = CLCircularRegion()
+    var fitRepublicGeoFence = CLCircularRegion()
+    var montageWellnessGeoFence = CLCircularRegion()
     var previousPoints:Int = 0
     var currentPoints:Int = 0
     var counter = 0.0
@@ -62,18 +74,6 @@ class WorkoutViewController: UIViewController, CLLocationManagerDelegate, UIAppl
         progressBar.isHidden = true
         NotificationCenter.default.addObserver(self, selector:#selector(upDateTimeDifference), name: UIApplication.willEnterForegroundNotification, object: nil)
         
-        let favoriteGeofenceRegionCenter = CLLocationCoordinate2D(
-            latitude: 36.6157,
-            longitude: -121.8285)
-        
-        favoriteGymRegion = CLCircularRegion(
-            center: favoriteGeofenceRegionCenter,
-            radius: locationsModel.geoFenceRadius * 1.10,
-            identifier: "FavoriteGymIdentifier"
-        )
-        favoriteGymRegion.notifyOnEntry = true
-        // This will only notify us or do something when we have left
-        print("Monitoring for favorite location has started")
 
     }
     
@@ -82,8 +82,23 @@ class WorkoutViewController: UIViewController, CLLocationManagerDelegate, UIAppl
         tabBarController?.navigationItem.title = "Workout"
         //This loads data from firebase upon load
         //Need to make it if we cant connect to the internet, but are logged in, we access saved data on our plist
+        //
+        //
+        let inShapeMontereyGeofenceRegionCenter = CLLocationCoordinate2D(
+            latitude:  36.5967713919556,
+            longitude: -121.85367114721271
+        )
+        inShapeMontereyGeoFence = CLCircularRegion(
+            center: inShapeMontereyGeofenceRegionCenter,
+            radius: 50,
+            identifier: "FavoriteGymIdentifier"
+        )
+        inShapeMontereyGeoFence.notifyOnEntry = true
+        self.locationManager.startMonitoring(for: inShapeMontereyGeoFence)
+        print("Monitoring for favorite location1 has started")
+        //
+        //
         self.pointsActivityMonitor.isHidden = false
-        self.locationManager.startMonitoring(for: favoriteGymRegion)
         self.pointsActivityMonitor.startAnimating()
         pointsDB.child(Auth.auth().currentUser!.uid).observeSingleEvent(of: .value, with: { (snapshot) in
             if snapshot.exists() {

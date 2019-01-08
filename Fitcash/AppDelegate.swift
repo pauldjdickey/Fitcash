@@ -126,7 +126,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // customize your notification content
         let content = UNMutableNotificationContent()
         content.title = "Are you ready to workout?"
-        content.body = "You are at your favorite gym. Go to the app to start claiming your points!"
+        content.body = "You are at a gym. Go to the app to start claiming your points!"
         content.sound = UNNotificationSound.default
         
         // when the notification will be triggered
