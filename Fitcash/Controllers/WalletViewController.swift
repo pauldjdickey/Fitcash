@@ -62,7 +62,8 @@ class WalletViewController: UITableViewController {
     //This is what will go into the cells
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "walletCell", for: indexPath)
-        
+        cell.textLabel?.numberOfLines = 0 // line wrap
+        cell.textLabel?.lineBreakMode = NSLineBreakMode.byWordWrapping
         let offer = offers[indexPath.row]
         cell.textLabel?.text = offer.title
         cell.detailTextLabel?.text = "Tap to use offer"

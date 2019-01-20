@@ -62,6 +62,7 @@ class RedeemOfferViewController: UITableViewController {
         
     }
     
+    
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return offers.count
         
@@ -70,7 +71,8 @@ class RedeemOfferViewController: UITableViewController {
     //This is what will go into the cells
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "redeemOfferCell", for: indexPath)
-        
+        cell.textLabel?.numberOfLines = 0 // line wrap
+        cell.textLabel?.lineBreakMode = NSLineBreakMode.byWordWrapping
         let offer = offers[indexPath.row]
         cell.textLabel?.text = offer.title
                 if offer.cost != nil {
